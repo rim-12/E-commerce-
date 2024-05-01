@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
     private final BCryptPasswordEncoder passwordEncoder;
 
     public List<UserResponseDto> getAllUsers() {
-        return userRepository.findAll²().stream()
+        return userRepository.findAll().stream()
                 .map(MappingProfile::mapToUserDto).toList();
     }
 
